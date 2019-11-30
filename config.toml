@@ -1,0 +1,111 @@
+# The URL of your website.
+# End your URL with a `/` trailing slash, e.g. `https://example.com/`.
+baseurl = "https://marvel6.cn/"
+
+# Title of your site
+title = "Guojing Homepage"
+
+# Your copyright notice - appears in site footer.
+# To display a copyright symbol, type `&copy;`.
+copyright = "&copy; Guojing 2019"
+
+theme = "minimal-academic"
+enableEmoji = true
+footnotereturnlinkcontents = "<sup>^</sup>"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+#preserveTaxonomyNames = true
+paginate = 10
+
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+
+# Enable analytics by entering your Google Analytics tracking ID
+googleAnalytics = ""
+
+# Get last modified date for content from Git?
+enableGitInfo = false
+
+[outputs]
+  home = [ "HTML", "CSS", "RSS" ]
+  section = [ "HTML", "RSS" ]
+
+# Configure BlackFriday Markdown rendering.
+#   See: https://gohugo.io/readfiles/bfconfig/
+[blackfriday]
+  hrefTargetBlank = true  # `true` opens external links in a new tab.
+  fractions = true  # `false` disables smart fractions (e.g. 5/12 formatted as a fraction).
+  smartypants = true  # `false` disables all smart punctuation substitutions (e.g. smart quotes, dashes, fractions).
+
+[params]
+  # Your details.
+  name = "Guojing Tian"
+  bio = "Assistant Professor  ICT, CAS"
+
+  # avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  avatar = "guojing.jpeg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  hero_image = "hero.jpg"
+
+  location = "Beijing, China"
+
+  # Discussion link (e.g. link to a forum, mailing list, or chat).
+  #   Uncomment line below to use.
+  #   discussion = { name = "Discuss", url = "https://discourse.gohugo.io" }
+
+  # Date and time format (refer to Go's date format: http://fuckinggodateformat.com )
+  #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
+  date_format = "Jan 2, 2006"
+  #   Examples: "3:04 pm" or "15:04"
+  time_format = "3:04 PM"
+
+  # Display comment count? Requires commenting to be enabled.
+  comment_count = true
+
+  # Enable native social sharing buttons?
+  sharing = false
+
+  # Privacy pack
+  #   Show a cookie consent message to visitors
+  #   Anonymize IP in Google Analytics (if enabled)
+  privacy_pack = false
+
+  # Social links
+  # Shown in sidebar, icons from Font Awesome
+  [[params.social]]
+    icon = "wechat"
+    icon_pack = "fa"
+    link = "http://theory.ict.ac.cn/en/"
+    text = "quantum_explorer"
+
+  [[params.social]]
+    icon = "envelope"
+    icon_pack = "fa"
+    link = "mailto://tianguojing@ict.ac.cn"
+    text = "tianguojing@ict.ac.cn"
+
+  # Header menu links
+  [[params.menu]]
+    link = "/"
+    text = "Home"
+  
+  [[params.menu]]
+    link = "/publications"
+    text = "Publications"
+
+  [[params.menu]]
+    link = "/presentations"
+    text = "Presentations"
+
+  [[params.menu]]
+    link = "/projects"
+    text = "Projects"
+
+
+  [[params.menu]]
+    link = "/about"
+    text = "About"
+
+# Taxonomies.
+# [taxonomies]
+#   tag = "tags"
+#   category = "categories"
+#   publication_type = "publication_types"
