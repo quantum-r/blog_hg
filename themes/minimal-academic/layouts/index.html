@@ -5,3 +5,7 @@
 
 {{ partial "footer_container.html" . }}
 {{ partial "footer.html" . }}
+
+{{- if not .Site.IsServer -}}
+  {{ partial "mta.html" . }}
+{{- end -}}

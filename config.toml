@@ -37,6 +37,7 @@ enableGitInfo = false
   smartypants = true  # `false` disables all smart punctuation substitutions (e.g. smart quotes, dashes, fractions).
 
 [params]
+  mobileTencentAnalytics = "500706054"
   # Your details.
   name = "Guojing Tian"
   bio = "Assistant Professor  ICT, CAS"
