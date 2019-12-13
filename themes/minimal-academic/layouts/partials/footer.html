@@ -2,7 +2,10 @@
     {{ if and $comments_enabled ($.Site.Params.comment_count | default true) }}
     <script id="dsq-count-scr" src="//{{ .Site.DisqusShortname }}.disqus.com/count.js" async></script>
     {{ end }}
-
+	
+  {{- if not .Site.IsServer -}}
+    {{ partial "mta.html" . }}
+  {{- end -}}
 
   </body>
 </html>
